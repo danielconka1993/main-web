@@ -1,0 +1,105 @@
+import "./css/Email.css";
+import { useState } from "react";
+
+const Email = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+  const [error, setError] = useState("");
+
+  const validateName = (name) => {
+    const nameRegex = /^[a-zA-ZěščřžýáíéúůĚŠČŘŽÝÁÍÉÚŮ,:.() -]{4,20}$/;
+    return nameRegex.test(name);
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailRegex.test(email);
+  };
+
+  const validateText = (text) => {
+    const textRegex = /^[a-zA-Z0-9ěščřžýáíéúůĚŠČŘŽÝÁÍÉÚŮ,:.() -]{10,100}$/;
+    return textRegex.test(text);
+  };
+
+  const btnSubmit = () => {
+    // e.preventDefault();
+
+    if (!name || !email || !text) {
+      setError("Všechna pole jsou povinná");
+    } else if (!validateName(name)) {
+      setError("Délku Jména 4 - 100 znaků. Povolené znaky: ,.():-");
+    } else if (!validateEmail(email)) {
+      setError("Neplatný formát e-mailu");
+    } else if (!validateText(text)) {
+      setError("Délku text 10 - 100 znaků. Povolené znaky: ,.():-");
+    } else {
+      setError("Zpráva odeslána, brzy Vás kontaktuji zpět");
+
+        // setName("");
+        // setEmail("");
+        // setText("");
+    }
+  };
+
+  return (
+    <section className="kontakty">
+      {/* Nastavení pro Netlify */}
+      <form name="contact" method="POST" data-netlify="true" action="/kontakty">
+        <h1>Poslat E-mail</h1>
+        <div className="kontakty-prvniRadek">
+          <div className="sloupec">
+            <p>Jméno</p>
+            <input
+              type="text"
+              name="name"
+              placeholder="Zadejte jméno"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <div className="sloupec">
+            <p>E-mail</p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Zadejte e-mail"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+        </div>
+        <textarea
+          value={text}
+          name="text"
+          onChange={(e) => setText(e.target.value)}
+          className="kontakty-textarea"
+          id=""
+          placeholder="Zadejte text"
+        ></textarea>
+        <div className="container-btnSubmit">
+          <p>{error}</p>
+          <input className="btnSubmit" type="submit" onClick={btnSubmit} />
+        </div>
+        {/* Inputy pro Netify */}
+        <input
+        type="hidden"
+        name="to_email"
+        value="danielconka1993@gmail.com"
+        />
+        <input
+        type="hidden"
+        name="subject"
+        value="Zpráva z mé webovky"
+        />
+        <input
+        type="hidden"
+        name="message"
+        value={`Jméno: ${name}\nE-mail: ${email}\nText: ${text}`}
+        />
+      </form>
+    </section>
+  );
+};
+
+export default Email;

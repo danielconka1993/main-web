@@ -1,0 +1,129 @@
+import "./css/Domu.css"
+import ja from "../img/ja2.png"
+import { useEffect, useState } from "react"
+
+const Domu = () => {
+  // Základní text
+  const hlavniText = () => {
+    return(
+      <div className="domuHlavniText">
+          <article>
+            <h3>Ahoj</h3>
+            <h1>Jsem Daniel</h1>
+            <p>&nbsp;jsem budoucí Front-end developer.</p><br />
+          </article>
+
+          <article className="domu-text">
+              <div className="domu-text-prvni">
+                  <p>Jmenuji se Daniel Čonka</p>
+                  <p>&nbsp;&&nbsp;</p> 
+                  <p>jsem hobby&nbsp; </p> 
+                  <p>full stack developer</p>
+                  <p>.</p>
+                </div>
+                <p>Mam svůj koníček orpavdu.</p>
+          </article>
+      </div>
+    );
+  }
+  
+  const [text, setText] = useState(hlavniText())
+
+// Refresh základního textu
+  useEffect(() => {
+    const zakladniText = setInterval(() => {
+      setText(hlavniText());
+    }, 10000);
+    return () => clearInterval(zakladniText)
+  }, [text]);
+
+// Jazyky
+  const btnJavascript = () => {
+    setText(<article className="domu-ostatniJazyky">
+          <h1>JavaScript</h1>
+          <h3>&nbsp;Při práci s ním ovládám </h3>
+          <p>
+              &nbsp;Short circuit evaluation, cykly, funkce.
+          </p>
+          <p>
+              &nbsp;Práci s <span className="zluta">polem</span> - destructuringu, .map, .filter, .find, spread operátor. 
+          </p>
+          <p>
+              &nbsp;<span className="zluta">OOP</span>, práci s API, manipulace s <span className="zluta">DOM</span> - HTML, CSS, eventy.
+          </p>
+        </article>
+        )
+  }
+
+  const btnPHPaSQL = () => {
+    setText(<article className="domu-ostatniJazyky">
+          <h1>PHP <span className="zluta">&</span> SQL</h1>
+          <h3>&nbsp;Při práci s ním ovládám </h3>
+          <p>
+              &nbsp;<span className="zluta">Správu dat a tabulek </span>(referenční, omezujicí integrita) v databáze, Cookies, Sessions.
+          </p>
+          <p>
+             &nbsp;<span className="zluta"> Bezpečnos</span> - escapování, trimování, hashování hesel a prevence XSS. 
+          </p>
+          <p>
+              &nbsp;<span className="zluta">OOP</span> a využití vestavěných funkcí.
+          </p>
+    </article>
+    )
+  }
+
+  const btnReact = () => {
+    setText(<article className="domu-ostatniJazyky">
+        <h1>React</h1>
+        <h3>&nbsp;Při práci s ním ovládám </h3>
+        <p>
+              &nbsp;<span className="zluta">FireBase</span> - správa databáze (také posluchač), formuláře,  dynamické MPA.
+          </p>
+          <p>
+              &nbsp;<span className="zluta">Hooks</span> - useState, useEffect, useRaf, useReducer, useContext, useParams, tvoba <span className="zluta">vlasních Hooků</span> + destructuring.
+          </p>
+          <p>
+              &nbsp;<span className="zluta">eventy</span> - onClick, onChange, také Prop Drilling a Icony. 
+        </p>
+      </article>
+    )
+  }
+
+ const btnTypeScript = () => {
+  setText(<article className="domu-ostatniJazyky">
+      <h1>TypeScript</h1>
+      <h3>&nbsp; Současné studium</h3>
+      <p>&nbsp;Nyní se zabívám výukou TypeScriptu.</p>
+      <p>&nbsp;Další v pořadí jsou kurzích ohledně <span className="zluta">UI</span>.</p>
+    </article>
+  )
+ }
+
+
+
+  return <div className="domu">
+
+    <section className="levaStrana">
+      <img src={ja} alt="Moje fotka" onClick={() => setText(hlavniText())} />
+    </section>
+
+
+    <section className="pravaStrana" >
+      <div className="domuVyberJazyku">
+        <button onClick={btnJavascript}>JavaScript</button>
+        <button onClick={btnPHPaSQL}>PHP & SQL</button>
+        <button onClick={btnReact}>React</button>
+        
+        <button onClick={btnTypeScript}>TypeScript</button>
+      </div>
+
+      <strong>
+        <>
+          {text}
+        </>
+      </strong>
+    </section>
+  </div>
+}
+
+export default Domu

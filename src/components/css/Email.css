@@ -1,0 +1,15 @@
+.kontakty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 110px);
+    width: 100%;
+}
+.kontakty .kontakt{
+    display: flex;
+    
+}
+.kontakty .kontakt a{
+    text-decoration: none;
+    color: aliceblue;
+}

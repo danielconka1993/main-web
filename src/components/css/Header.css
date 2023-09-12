@@ -1,0 +1,115 @@
+.header{
+    width: 100%;
+}
+
+nav {
+    background-color: #141414;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+}
+
+.header-name{
+    display: flex;
+    align-items: center;
+}
+.header-name p:nth-child(3){
+    color: rgb(100, 220, 241);
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.nav-header img {
+    width: 45px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.nav-header button {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.nav-list a {
+    margin-left: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #e5e5e5;
+    transition: color 0.5s;
+}
+.nav-list a:hover {
+    color: rgb(255, 247, 9);
+}
+
+.nav-list a.active{
+    color: rgb(255, 247, 9);
+}
+
+
+@media (max-width: 700px){
+    .navigation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-header {
+        width: 100%;
+    }
+
+    .nav-header button {
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
+    .hamburger-icon {
+        color: #e5e5e5;
+        font-size: 40px;
+        margin-right: 20px;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .nav-list a {
+        width: 100%;
+        padding: 10px 5px;
+        padding-right: 30px;
+    }
+
+    /* Classy pro použití v reactu */
+    .hide {
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.1s linear;
+    }
+
+    .show {
+        height: 130px;
+        transition: all 0.1s linear;
+    }
+}
