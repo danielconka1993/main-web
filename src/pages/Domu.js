@@ -1,5 +1,6 @@
 import "./css/Domu.css"
 import ja from "../img/profilePhoto.png"
+import { ImGithub } from "react-icons/im";
 import { useEffect, useState } from "react"
 
 const Domu = () => {
@@ -33,7 +34,7 @@ const Domu = () => {
   useEffect(() => {
     const zakladniText = setInterval(() => {
       setText(hlavniText());
-    }, 10000);
+    }, 15000);
     return () => clearInterval(zakladniText)
   }, [text]);
 
@@ -72,6 +73,27 @@ const Domu = () => {
     )
   }
 
+  const btnGitHub = () => {
+    setText(<article className="domu-ostatniJazyky">
+        <h1>Git <span className="zluta">&</span> GitHub</h1>
+        <h3>&nbsp;Při práci s ním ovládám </h3>
+        <p>
+              &nbsp;<span className="zluta">Git</span> - práce s Repository, Branches, Merge.
+          </p>
+          <p>
+              &nbsp;<span className="zluta">GUI</span> - používání grafického prostředí <span className="podtržení">Git Kraken</span>.
+          </p>
+          <p>
+              &nbsp;<span className="zluta">GitHub</span> - <span className="zluta">Klonování</span> existujícího repozitáře z GitHubu do lokálního prostředí. 
+              <span className="zluta">Vytvoření</span> nového repozitáře na GitHubu a propojení s lokálním repozitářem.
+        </p>
+        <p>
+        Odkaz na můj GitHub &nbsp;&nbsp; <a href="https://github.com/danielconka1993" target="_blank" rel="noopener noreferrer"><ImGithub /></a>
+        </p>
+      </article>
+    )
+  }
+
   const btnReact = () => {
     setText(<article className="domu-ostatniJazyky">
         <h1>React</h1>
@@ -83,7 +105,7 @@ const Domu = () => {
               &nbsp;<span className="zluta">Hooks</span> - useState, useEffect, useRaf, useReducer, useContext, useParams, tvoba <span className="zluta">vlasních Hooků</span> + destructuring.
           </p>
           <p>
-              &nbsp;<span className="zluta">eventy</span> - onClick, onChange, také Prop Drilling a Icony. 
+              &nbsp;<span className="zluta">eventy</span> - onClick, onChange, také Prop Drilling a icony. 
         </p>
       </article>
     )
@@ -110,11 +132,11 @@ const Domu = () => {
 
     <section className="pravaStrana" >
       <div className="domuVyberJazyku">
-        <button onClick={btnJavascript}>JavaScript</button>
+        <button onClick={btnJavascript}>JS</button>
         <button onClick={btnPHPaSQL}>PHP & SQL</button>
         <button onClick={btnReact}>React</button>
-        
-        <button onClick={btnTypeScript}>TypeScript</button>
+        <button onClick={btnGitHub}>GitHub</button>
+        <button onClick={btnTypeScript}>TS</button>
       </div>
 
       <strong>
