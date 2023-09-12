@@ -1,5 +1,5 @@
 import "./css/Domu.css"
-import ja from "../img/ja2.png"
+import ja from "../img/profilePhoto.png"
 import { useEffect, useState } from "react"
 
 const Domu = () => {

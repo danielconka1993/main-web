@@ -3,7 +3,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  min-height: calc(100vh - 110px);
+  /* max-height: calc(100vh - 110px); */
+
 }
 
 /* Levá Strana */
@@ -18,9 +19,12 @@
 }
 .levaStrana img{
   filter: grayscale(100%) contrast(1.1) brightness(0.8);
-  width: 90%;
+  /* max-width: 58%; */
+  height: 100%;
+  object-fit: cover;
   margin-top: 30px;
   cursor: pointer;
+
 }
 
 /* Pravá Strana */
@@ -29,6 +33,10 @@
   width: 60%;
 }
 @media(min-width: 1100px){
+  .domu{
+    max-height: calc(100vh - 110px);
+    overflow: hidden;
+  }
 .domu .domuVyberJazyku{
     overflow-x: auto; /* Přidá vodorovný scrollbar, pokud je potřeba */
     width: 100%;
@@ -140,6 +148,7 @@
 
 @media(max-width:1100px){
     .domu{
+      min-height: calc(100vh - 110px);
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
@@ -149,6 +158,9 @@
       width: 100%;
       align-items: center;
     }
+    .domu .levaStrana img{
+      height: 30vh;
+    }
 
     .domu .pravaStrana{
       width: 100%;
@@ -157,7 +169,7 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      margin: 10px 0 20px 0;
+      margin: 0 0 20px 0;
       border-top: 5px solid #141414;
       border-left: 5px solid #141414;
       border-top-left-radius: 20px;
