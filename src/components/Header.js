@@ -1,13 +1,15 @@
 import { NavLink } from "react-router-dom"
 import "./css/Header.css"
 import { HiMenu, HiHome, HiOutlineCode, HiOutlineDeviceTablet } from "react-icons/hi";
-import { ImGithub } from "react-icons/im";
+
 import ReactLogo from "../img/react-logo.png"
 import { useState } from "react";
+import HeaderIcons from "./HeaderIcons";
 
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false)
+ 
 
   return <div className="header">
             <nav>
@@ -24,7 +26,8 @@ const Header = () => {
                 </button>
               </div>
 
-              <a href="https://github.com/danielconka1993" target="_blank" rel="noopener noreferrer" className="header-kontakt-icony"  ><ImGithub /></a>
+              <HeaderIcons />
+              
 
               <div className={`nav-list ${showMenu ? "show" : "hide"}`}>
                     <NavLink to="/"><HiHome /> Domu</NavLink>

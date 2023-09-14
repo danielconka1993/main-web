@@ -95,7 +95,7 @@
   background-color: rgb(255, 247, 9);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 30px;
-  padding: 5px 0;
+  padding: 5px 30px;
 }
 
 .domu-text p{
@@ -211,7 +211,10 @@
       width: 100%;
     }
     .domuHlavniText h1, .domuHlavniText h3{
-      padding-left: 2%;
+      padding-left: 3.5%;
+    }
+    .domuHlavniText article:nth-child(1) p{
+      padding: 3.5%;
     }
 
     .domu-text{
@@ -223,6 +226,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      padding: 0 10px;
     }
     /* ˇOstatni jazyky */
     .domu-ostatniJazyky{

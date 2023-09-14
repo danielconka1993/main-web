@@ -11,7 +11,7 @@ const Domu = () => {
           <article>
             <h3>Ahoj</h3>
             <h1>Jsem Daniel</h1>
-            <p>&nbsp;jsem budoucí Front-end developer.</p><br />
+            <p>budoucí Front-end developer.</p><br />
           </article>
 
           <article className="domu-text">
