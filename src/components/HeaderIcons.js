@@ -36,8 +36,13 @@ const HeaderIcons = () => {
 {/* gitHub */}
 <div className="container-icona" onMouseEnter={git_kontakt_enter} onMouseLeave={git_kontakt_leave}>
 <ImGithub className="icona" />
-{showGit &&  <a href="https://github.com/danielconka1993" className="text-slide-in">danielconka1993</a>}
+{showGit &&  <a href="https://github.com/danielconka1993" className="text-slide-in" target="_blank" rel="noopener noreferrer">danielconka1993</a>}
+</div>
 
+{/* email */}
+<div className="container-icona" onMouseEnter={email_kontakt_enter} onMouseLeave={email_kontakt_leave}>
+<AiOutlineMail  className="icona"/>
+{showEmail && <a href="mailto:danielconka1993@gmail.com">danielconka1993@gmail.com</a>}
 </div>
 
 {/* telefon */}
@@ -46,11 +51,6 @@ const HeaderIcons = () => {
 {showTelefon && <a href="tel:+420773590989">+420 773 590 989</a>}
 </div>
 
-{/* email */}
-<div className="container-icona" onMouseEnter={email_kontakt_enter} onMouseLeave={email_kontakt_leave}>
-<AiOutlineMail  className="icona"/>
-{showEmail && <a href="mailto:danielconka1993@gmail.com">danielconka1993@gmail.com</a>}
-</div>
 
 </div>
 }
