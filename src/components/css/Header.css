@@ -97,7 +97,7 @@ nav {
     .nav-list a {
         width: 100%;
         padding: 10px 5px;
-        padding-right: 30px;
+        padding-right: 42px;
     }
 
     /* Classy pro použití v reactu */
@@ -108,7 +108,8 @@ nav {
     }
 
     .show {
-        height: 130px;
+        /* height: 130px; */
+        height: 90px;
         transition: all 0.1s linear;
     }
 }

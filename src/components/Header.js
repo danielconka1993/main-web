@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import "./css/Header.css"
-import { HiMenu, HiHome, HiOutlineCode, HiOutlineDeviceTablet } from "react-icons/hi";
+import { HiMenu, HiHome, HiOutlineCode} from "react-icons/hi";
 
 import ReactLogo from "../img/react-logo.png"
 import { useState } from "react";
@@ -32,7 +32,7 @@ const Header = () => {
               <div className={`nav-list ${showMenu ? "show" : "hide"}`}>
                     <NavLink to="/"><HiHome /> Domu</NavLink>
                     <NavLink to="/projekty"><HiOutlineCode /> Projekty</NavLink>
-                    <NavLink to="/kontakty"><HiOutlineDeviceTablet /> Kontakty</NavLink>
+                    {/* <NavLink to="/kontakty"><HiOutlineDeviceTablet /> Kontakty</NavLink> */}
               </div>
             </div>
             </nav>
