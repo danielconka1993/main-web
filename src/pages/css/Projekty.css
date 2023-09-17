@@ -33,8 +33,7 @@
     border-bottom: 5px solid #141414;
 }
 .projekty .jeden-projekt h1{
-    width: 60%;
-    margin-left: 40%;
+    text-align: center;
     color:rgb(255, 247, 9);
     padding: 10px;
     padding-left: 10px;
@@ -44,4 +43,14 @@
 .projekty .jeden-projekt strong{
     font-weight: normal;
     margin-bottom: 15px;
+    text-align: center;
+}
+
+@media (max-width: 700px){
+    .projekty{
+        width: 100%;
+    }
+    .projekty .jeden-projekt{
+        width: 90%;
+    }
 }

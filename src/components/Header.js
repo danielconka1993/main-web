@@ -10,6 +10,9 @@ import HeaderIcons from "./HeaderIcons";
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false)
  
+  const skrytimenu = () => {
+    setShowMenu(false)
+  }
 
   return <div className="header">
             <nav>
@@ -30,8 +33,8 @@ const Header = () => {
               
 
               <div className={`nav-list ${showMenu ? "show" : "hide"}`}>
-                    <NavLink to="/"><HiHome /> Domu</NavLink>
-                    <NavLink to="/projekty"><HiOutlineCode /> Projekty</NavLink>
+                    <NavLink onClick={skrytimenu} to="/"><HiHome /> Domu</NavLink>
+                    <NavLink onClick={skrytimenu} to="/projekty"><HiOutlineCode /> Projekty</NavLink>
                     {/* <NavLink to="/kontakty"><HiOutlineDeviceTablet /> Kontakty</NavLink> */}
               </div>
             </div>
