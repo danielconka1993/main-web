@@ -1,6 +1,5 @@
 import { useState } from "react"
 import "./css/Projekty.css"
-import data from "./Projekty/data"
 import staryWeb from "./Projekty/staryweb.png"
 import Netflix from "./Projekty/Netflix/Netflix"
 
@@ -9,6 +8,16 @@ const Projekty = () => {
   const [zobrazitProjektNetflix,setZobrazitProjektNetflix] = useState(false)
   return <section className='projekty'>
         <section className="vsechny-projekty">
+
+          <article className="container-jazyk"> 
+            <h1>React</h1>
+            <div className="jeden-projekt">
+              <button onClick={() => {setZobrazitProjektNetflix(!zobrazitProjektNetflix);}}>
+                  {zobrazitProjektNetflix ? "Skrýt projekt" : "Zobrazit projekt"}
+              </button>
+              {zobrazitProjektNetflix && <Netflix />}
+            </div>
+          </article>
 
           <article className="container-jazyk">
             <h1>JavaScript , PHP , SQL</h1>
@@ -20,15 +29,7 @@ const Projekty = () => {
             </div>
           </article>
 
-          <article className="container-jazyk"> 
-            <h1>React</h1>
-            <div className="jeden-projekt">
-              <button onClick={() => {setZobrazitProjektNetflix(!zobrazitProjektNetflix);}}>
-                  {zobrazitProjektNetflix ? "Skrýt projekt" : "Zobrazit projekt"}
-              </button>
-              {zobrazitProjektNetflix && <Netflix />}
-            </div>
-          </article>
+          
 
             
         </section>
