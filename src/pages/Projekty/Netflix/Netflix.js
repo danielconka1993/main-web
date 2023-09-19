@@ -1,11 +1,15 @@
+import "./Netflix.css"
 import { useState } from "react"
 import data_movies from "./data_movies.js"
 import data_kategorie from "./data_kategorie.js"
-import "./Netflix.css"
+import data_questions from "./questions/data_questions.js"
+import Qestion from "./questions/Question.js"
+
 
 const Netflix = () => {
 
     const [movies,setMovies] = useState(data_movies)
+    const [question, setQuestion] = useState(false)
 
     // Vymazat film
     const btnVymazatFilm = (id) => {
@@ -62,6 +66,15 @@ const Netflix = () => {
     <div className="BtnAll">
         <button onClick={btnVymazatFilmy}>Vymazat filmy</button>
         <button onClick={btnVratitFilmy}>Vrátit filmy</button>
+    </div>
+
+    <div className="question">
+        <button onClick={() => setQuestion(!question)}>
+            {question ? "Skrýt" : "Otázky"}
+        </button>
+        {question && data_questions.map( (oneOtazka)=> {
+            return <Qestion key={oneOtazka.id} {...oneOtazka}/>
+        })}
     </div>
 
 
