@@ -4,6 +4,34 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    min-height: 100vh;
+}
+.projekty .vsechny-projekty{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.projekty .container-jazyk{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+.projekty .container-jazyk h1{
+    text-align: left;
+    position: absolute;
+    left: -20%;
+    top: 30px;
+    font-size: 35px;
+    border-bottom: 5px solid rgb(255, 247, 9);
+    padding: 0 15px;
+    border-bottom-left-radius: 20px;
+    text-shadow: 0 0 35px rgb(46, 46, 46);
 }
 .projekty .jeden-projekt{
     display: flex;
@@ -11,10 +39,10 @@
     justify-content: center;
     align-items: center;
 
-    margin-top: 20px;
+    margin-top: 100px;
     border: 5px solid #141414;
     border-radius: 30px;
-    width: 50%;
+    width: 100%;
 
 
     transition: box-shadow linear 0.3s;
@@ -32,7 +60,7 @@
     border-top-right-radius: 23px;
     border-bottom: 5px solid #141414;
 }
-.projekty .jeden-projekt h1{
+.projekty .jeden-projekt h2{
     text-align: center;
     color:rgb(255, 247, 9);
     padding: 10px;

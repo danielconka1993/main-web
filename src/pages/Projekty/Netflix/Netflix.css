@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(32, 32, 32);
+}
+.netflix{
+    color: red;
+    margin: 10px 10px;
+    text-align: center;
+    text-shadow: 0 0 20px black;;
+}
+
+.allMovies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.oneMovie{
+    position: relative;
+    width: 300px;
+    height: 440px;
+    margin: 10px 10px;
+    background-color: black;
+    color: rgb(244, 242, 242);
+    box-shadow: 0 0 20px black;
+    cursor: pointer;
+    /* pro hover plunulý přechod */
+    transition: all 0.2s linear;
+}
+.oneMovie:hover{
+    transform: scale(1.04);
+}
+.oneMovie h2,
+.oneMovie p{
+    padding: 0 10px;
+    
+}
+.oneMovie img{
+    display: block;
+    width: 100%;
+    height: 160px;
+}
+.oneMovie p{
+    font-size: 16px;
+}
+.posledniP{
+    margin-bottom: 10px;
+}
+.oneMovie button{
+    display: block;
+    align-items: flex-end;
+    width: 100%;
+    border: none;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    transition: color 0.2s linear; /* Přechod pro vlastnost color */
+}
+.BtnAll{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.BtnAll button{
+    border: none;
+    background-color: red;
+    padding: 5px 10px;
+    margin: 10px;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 0 0 20px black;
+    transition: color 0.2s linear; /* Přechod pro vlastnost color */
+}
+button:hover{
+    color: white;
+}
