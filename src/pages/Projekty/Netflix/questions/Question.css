@@ -1,0 +1,31 @@
+.netflix .one-Question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid #141414;
+}
+.netflix .one-Question .radek{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.netflix .one-Question .radek h2{
+    font-size: 20px;
+    color: #e5e5e5;
+}
+.netflix .one-Question .radek button{
+    width: auto;
+}
+.netflix .one-Question .odpoved{
+    color: rgb(255, 247, 9);
+    padding: 5px 0;
+}
+
+@media(max-width: 700px){
+    .netflix .one-Question .radek{
+        width: auto;
+    }
+}

@@ -25,6 +25,9 @@ nav {
     display: flex;
     align-items: center;
 }
+.header-name p{
+    padding-top: 8px;
+}
 .header-name p:nth-child(3){
     color: rgb(100, 220, 241);
     margin-left: 10px;

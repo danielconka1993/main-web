@@ -1,13 +1,17 @@
+import "./Question.css"
 import { useState } from "react"
 
 const Qestion = ({title,info}) => {
   const [showQuestion, setShowQuestion] = useState(false)
   return <article className="one-Question">
-    <div>
+    <div className="radek">
         <h2>{title}</h2>
         <button onClick={() => setShowQuestion(!showQuestion)}>Odpověď</button>
     </div>
+    <div className="odpoved">
     {showQuestion && <p>{info}</p>}
+    </div>
+    
   </article>
 }
 

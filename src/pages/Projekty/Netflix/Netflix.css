@@ -1,11 +1,32 @@
-body{
-    background-color: rgb(32, 32, 32);
-}
 .netflix{
     color: red;
     margin: 10px 10px;
     text-align: center;
-    text-shadow: 0 0 20px black;;
+    text-shadow: 0 0 20px black;
+    background-color: rgb(15, 15, 15);
+}
+
+.kategorie-btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.kategorie-btns button {
+    margin: 5px;
+    padding: 5px 10px;
+    width: 100px;
+    padding: 7px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: #141414;
+    border: none;
+    color: #e5e5e5;
+    cursor: pointer;
+    transition: color 0.2s linear;
+    box-shadow: 0 0 5px red;
+}
+.kategorie-btns button:hover{
+    color: red;
 }
 
 .allMovies{
@@ -50,27 +71,65 @@ body{
     display: block;
     align-items: flex-end;
     width: 100%;
-    border: none;
-    background-color: red;
     position: absolute;
     bottom: 0;
-    transition: color 0.2s linear; /* Přechod pro vlastnost color */
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #141414;
+    border: none;
+    color: #e5e5e5;
+    cursor: pointer;
+    transition: color 0.2s linear;
+    box-shadow: 0 0 5px red;
 }
+    .oneMovie button:hover{
+        color: red;
+    }
 .BtnAll{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    margin: 30px 0 30px 0;
+    border-top: 5px solid #141414;
 }
 .BtnAll button{
-    border: none;
-    background-color: red;
-    padding: 5px 10px;
-    margin: 10px;
     width: 200px;
+    padding: 7px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: #141414;
+    border: none;
+    color: #e5e5e5;
     cursor: pointer;
-    box-shadow: 0 0 20px black;
-    transition: color 0.2s linear; /* Přechod pro vlastnost color */
+    transition: color 0.2s linear;
+    box-shadow: 0 0 5px red;
+    margin-top: 30px;
+    margin-left: 10px;
+    
 }
-button:hover{
-    color: white;
+    .BtnAll button:hover{
+        color: red;
+    }
+.questions{
+    position: relative;
+    border-top: 5px solid #141414;
+    width: 100%;
+    padding: 0 10px;
 }
+
+    .questions button{
+        width: 200px;
+        padding: 7px 10px 5px 10px;
+        border-radius: 10px;
+        background-color: #141414;
+        border: none;
+        color: #e5e5e5;
+        cursor: pointer;
+        transition: color 0.2s linear;
+        box-shadow: 0 0 5px red;
+        margin: 20px 10px 10px 10px;
+        
+    }
+        .questions button:hover{
+            color: red;
+        }

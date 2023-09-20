@@ -4,6 +4,7 @@ import data_movies from "./data_movies.js"
 import data_kategorie from "./data_kategorie.js"
 import data_questions from "./questions/data_questions.js"
 import Qestion from "./questions/Question.js"
+import Slider from "./auto_slider/Slider"
 
 
 const Netflix = () => {
@@ -38,8 +39,9 @@ const Netflix = () => {
     }
 
   return (
-    <section>
-    <div className="kategorie">
+    <section className="netflix">
+
+    <div className="kategorie-btns">
         {
             data_kategorie.map( (oneKategorie, index)=> {
                 return <button key={index} onClick={() => btnKategorie(oneKategorie)}>{oneKategorie}</button>
@@ -68,9 +70,9 @@ const Netflix = () => {
         <button onClick={btnVratitFilmy}>Vrátit filmy</button>
     </div>
 
-    <div className="question">
+    <div className="questions">
         <button onClick={() => setQuestion(!question)}>
-            {question ? "Skrýt" : "Otázky"}
+            {question ? "Skrýt Otázky" : "Otázky"}
         </button>
         {question && data_questions.map( (oneOtazka)=> {
             return <Qestion key={oneOtazka.id} {...oneOtazka}/>

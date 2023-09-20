@@ -1,3 +1,4 @@
+import "./ISS.css"
 import { useState, useEffect } from "react"
 
 const ISS = () => {
@@ -35,8 +36,7 @@ const getDataStation = async() => {
     return <h4>Loading...</h4>
   }
   else{
-  return <div>
-      <h4>API ISS</h4>
+  return <div className="ISS">
       <h2>Zeměpisná šířka</h2>
       <p>{latitude}</p>
       <h2>Zeměpisná délka</h2>

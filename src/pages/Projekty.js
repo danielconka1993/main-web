@@ -14,31 +14,37 @@ const Projekty = () => {
 
           <article className="container-jazyk"> 
             <h1>React</h1>
-            {/* Netflix */}
-            <div className="jeden-projekt">
-              <h3>Netflix</h3>
-              <button onClick={() => {setZobrazitProjektNetflix(!zobrazitProjektNetflix);}}>
-                  {zobrazitProjektNetflix ? "Skrýt projekt" : "Zobrazit projekt"}
-              </button>
-              {zobrazitProjektNetflix && <Netflix />}
-            </div>
+{/* !!!!!!!!!!!!!!!!! -     Nezapomenout upravit při novém projektu  - !!!!!!!!!!!!!!!!!!*/}
+            <div className={`projekty-react ${(zobrazitProjektNetflix || zobrazitProjektAPI) ? "projektyReact-sloupec" : "projektyReact-radek"}`}>
 
-            {/* API */}
-            <div className="jeden-projekt">
-              <h3>API</h3>
-              <button onClick={() => {setZobrazitProjektAPI(!zobrazitProjektAPI);}}>
-                  {zobrazitProjektAPI ? "Skrýt projekt" : "Zobrazit projekt"}
-              </button>
-              {zobrazitProjektAPI && <ISS />}
+              {/* Netflix */}
+              <div className={`jeden-projekt ${zobrazitProjektNetflix ? "jedenprojekt-big" : "jedenprojekt-small"}`}>
+                <h3>Netflix</h3>
+                <button className="btn-jedenProjekt" onClick={() => {setZobrazitProjektNetflix(!zobrazitProjektNetflix);}}>
+                    {zobrazitProjektNetflix ? "Skrýt projekt" : "Zobrazit projekt"}
+                </button>
+                <div>
+                  {zobrazitProjektNetflix && <Netflix />}
+                </div>
+              </div>
+
+              {/* API */}
+              <div className={`jeden-projekt ${zobrazitProjektAPI ? "jedenprojekt-big" : "jedenprojekt-small"}`}>
+                <h3>API</h3>
+                <button className="btn-jedenProjekt" onClick={() => {setZobrazitProjektAPI(!zobrazitProjektAPI);}}>
+                    {zobrazitProjektAPI ? "Skrýt projekt" : "Zobrazit projekt"}
+                </button>
+                {zobrazitProjektAPI && <ISS />}
+              </div>
             </div>
           </article>
 
           <article className="container-jazyk">
-            <h1>JavaScript , PHP , SQL</h1>
+            <h1>JS | PHP | SQL</h1>
             <div className='jeden-projekt'>
               <a href="https://arevyhs.000webhostapp.com" target="_blank" rel="noopener noreferrer">
               <img src={staryWeb} alt="obrazek projektu" />
-              <h2>Starý web</h2></a>
+              <h3>Starý web</h3></a>
               <strong>Původní web s projekty a odesílacím formulářem na můj email</strong>
             </div>
           </article>
