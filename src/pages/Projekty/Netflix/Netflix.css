@@ -47,6 +47,8 @@
     cursor: pointer;
     /* pro hover plunulý přechod */
     transition: all 0.2s linear;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .oneMovie:hover{
     transform: scale(1.04);
@@ -85,6 +87,7 @@
     .oneMovie button:hover{
         color: red;
     }
+    
 .BtnAll{
     display: flex;
     flex-wrap: wrap;

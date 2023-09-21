@@ -2,7 +2,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     min-height: 100vh;
 }
@@ -10,7 +9,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 .projekty .container-jazyk{
@@ -112,6 +110,9 @@
             box-shadow: 0 0 20px rgb(255, 247, 9);
         }
 
+    .projekty .staryweb{
+        width: 60%;
+    }
     .projekty .jeden-projekt strong{
         font-weight: normal;
         margin-bottom: 15px;
