@@ -1,5 +1,6 @@
 import "./Netflix.css"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 import data_movies from "./data_movies.js"
 import data_kategorie from "./data_kategorie.js"
 import data_questions from "./questions/data_questions.js"
@@ -10,7 +11,16 @@ const Netflix = () => {
 
     const [movies,setMovies] = useState(data_movies)
     const [question, setQuestion] = useState(false)
+    const [vyhledavac,setVyhledavac] = useState("")
 
+    // Vyhledávač
+    useEffect( () => {
+        const moviesAfterFilter = data_movies.filter( (oneMovie) => {
+            return oneMovie.title.toLowerCase().includes(vyhledavac.toLowerCase())
+        })
+        setMovies(moviesAfterFilter);
+      }, [vyhledavac])
+      
     // Vymazat film
     const btnVymazatFilm = (id) => {
         const promenaVymazatFilm = movies.filter( ( oneMovie) => {
@@ -40,6 +50,11 @@ const Netflix = () => {
   return (
     <section className="netflix">
 
+    <div className="vyhledavac">
+        <form>
+        <input type="text" autoComplete="off" placeholder="Vyhledač filmů..." value={vyhledavac} onChange={(e)=> setVyhledavac(e.target.value)} />
+        </form>
+    </div>
     <div className="kategorie-btns">
         {
             data_kategorie.map( (oneKategorie, index)=> {
@@ -53,11 +68,13 @@ const Netflix = () => {
                 const {id, image, title, age, tags, description} = oneMovie
 
                 return <div key={id} className="oneMovie">
-                <img src={image} alt="" />
-                <h2>{title}</h2>
-                <p>{age}</p>
-                <p>{tags}</p>
-                <p className="posledniP">{description}</p>
+                <Link to={`/projekty/${oneMovie.id}`}>
+                    <img src={image} alt="" />
+                    <h2>{title}</h2>
+                    <p>{age}</p>
+                    <p>{tags}</p>
+                    <p className="posledniP">{description}</p>
+                </Link>
                 <button onClick={() => btnVymazatFilm(id)}>Vymazat film</button>
             </div>
             })

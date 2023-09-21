@@ -4,13 +4,28 @@
     text-align: center;
     text-shadow: 0 0 20px black;
     background-color: rgb(15, 15, 15);
+    width: 100%;
+    border-top: 5px solid #141414;
+}
+.netflix .vyhledavac form input{
+    margin: 20px 0;
+    width: 40%;
+    padding: 6px 15px 5px 15px;
+    outline: none;
+    border: 5px solid #141414;
+    background-color: black;
+    border-radius: 20px;
+    color: #e5e5e5;
+    font-size: 20px;
 }
 
 .kategorie-btns{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #141414;
 }
 .kategorie-btns button {
     margin: 5px;
@@ -20,6 +35,7 @@
     border-radius: 10px;
     background-color: #141414;
     border: none;
+    background: black;
     color: #e5e5e5;
     cursor: pointer;
     transition: color 0.2s linear;
@@ -56,6 +72,7 @@
 .oneMovie h2,
 .oneMovie p{
     padding: 0 10px;
+    color: #e5e5e5;
     
 }
 .oneMovie img{
@@ -100,7 +117,7 @@
     width: 200px;
     padding: 7px 10px 5px 10px;
     border-radius: 10px;
-    background-color: #141414;
+    background-color: black;
     border: none;
     color: #e5e5e5;
     cursor: pointer;
@@ -124,7 +141,7 @@
         width: 200px;
         padding: 7px 10px 5px 10px;
         border-radius: 10px;
-        background-color: #141414;
+        background-color: black;
         border: none;
         color: #e5e5e5;
         cursor: pointer;
@@ -136,3 +153,8 @@
         .questions button:hover{
             color: red;
         }
+@media(max-width:700px){
+    .netflix .vyhledavac form input{
+        width: 95%;
+    }
+}
