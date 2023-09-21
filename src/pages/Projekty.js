@@ -8,7 +8,7 @@ import NoFirebase1 from "./Projekty/Form/noFirebase1/Form1"
 
 
 const Projekty = () => {
-  const [zobrazitProjektNetflix,setZobrazitProjektNetflix] = useState(true)
+  const [zobrazitProjektNetflix,setZobrazitProjektNetflix] = useState(false)
   // const [zobrazitProjektAPI, setZobrazitProjektAPI] = useState(false)
   const [zobrazitProjektForm_noFireBase, setZobrazitProjektForm_noFireBase] = useState(false)
 
