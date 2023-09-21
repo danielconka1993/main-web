@@ -24,7 +24,6 @@ const {image, title, description, tags} = oneSpecificMovie
       <p>{description}</p>
       <p>{tags}</p>
     </div>
-   
   </section>
 
 };

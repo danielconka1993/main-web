@@ -98,7 +98,7 @@
         padding: 7px 10px 5px 10px;
         border-radius: 10px;
         background-color: black;
-        border: 5px solid #141414;
+        border: none;
         color: #e5e5e5;
         cursor: pointer;
         box-shadow: 0 0 5px rgb(255, 247, 9);
