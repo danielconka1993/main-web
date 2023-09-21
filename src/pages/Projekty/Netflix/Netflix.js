@@ -4,7 +4,6 @@ import data_movies from "./data_movies.js"
 import data_kategorie from "./data_kategorie.js"
 import data_questions from "./questions/data_questions.js"
 import Qestion from "./questions/Question.js"
-import Slider from "./auto_slider/Slider"
 
 
 const Netflix = () => {

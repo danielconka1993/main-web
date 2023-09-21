@@ -8,7 +8,7 @@ const ISS = () => {
   const [loading,setLoading] = useState(true)
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    setInterval(() => {
       getDataStation();
     }, 1000);
 }, []);
@@ -42,7 +42,7 @@ const getDataStation = async() => {
       <h2>Zeměpisná délka</h2>
       <p>{longitude}</p>
       <h2>Na mapě</h2>
-      <a href={map} target="_blank">Google mapa</a>
+      <a href={map} target="_blank" rel="noopener noreferrer">Google mapa</a>
     </div>
 }
 }
