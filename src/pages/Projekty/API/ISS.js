@@ -13,7 +13,7 @@ const ISS = () => {
     }, 1000);
 }, []);
 
-const url = "api.open-notify.org/iss-now.json"
+const url = "http://api.open-notify.org/iss-now.json"
  
 const getDataStation = async() => {
       const response = await fetch(url)
