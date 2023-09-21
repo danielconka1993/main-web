@@ -10,7 +10,7 @@ import NoFirebase1 from "./Projekty/Form/noFirebase1/Form1"
 const Projekty = () => {
   const [zobrazitProjektNetflix,setZobrazitProjektNetflix] = useState(false)
   const [zobrazitProjektAPI, setZobrazitProjektAPI] = useState(false)
-  const [zobrazitProjektForm_noFireBase, setZobrazitProjektForm_noFireBase] = useState(true)
+  const [zobrazitProjektForm_noFireBase, setZobrazitProjektForm_noFireBase] = useState(false)
   return <section className='projekty'>
         <section className="vsechny-projekty">
 
@@ -18,6 +18,7 @@ const Projekty = () => {
             <h1>React</h1>
 {/* Nezapomenout upravit při novém projektu - Dobudoucna předělat na useReducer*/}
             <div className={`projekty-react ${(zobrazitProjektNetflix || zobrazitProjektAPI || zobrazitProjektForm_noFireBase) ? "projektyReact-sloupec" : "projektyReact-radek"}`}>
+              
 
               {/* Netflix */}
               <div className={`jeden-projekt ${zobrazitProjektNetflix ? "jedenprojekt-big" : "jedenprojekt-small"}`}>
