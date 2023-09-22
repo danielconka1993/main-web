@@ -1,0 +1,75 @@
+.firebase-form2{
+    width: 100%;
+}
+.firebase-form2 form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.firebase-form2 form input[type="text"],
+.firebase-form2 form input[type="number"]{
+        margin: 10px;
+        padding: 12px 10px 10px 10px;
+        flex:2;
+        border: 5px solid #141414;
+        background-color: black;
+        border-radius: 20px;
+        outline: none;
+        color: #e5e5e5;
+        font-size: 20px;
+    }
+
+    .firebase-form2 form input[type="submit"]{
+        margin: 10px 20px;
+        padding: 0px 30px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #141414;
+        border: none;
+        color: #e5e5e5;
+        cursor: pointer;
+        transition: color 0.2s linear;
+        box-shadow: 0 0 5px red;
+    }
+
+.firebase-form2 .firebase-info{
+    text-align: right;
+    margin: 10px 20px 10px 10px;
+    color: rgb(255, 247, 9);
+}
+
+.firebase-form2 .movies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.firebase-form2 .movies .movie{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    border-top: 5px solid #141414;
+    padding: 20px 0;
+}
+
+.firebase-form2 .movies .movie p{
+    width: 80% ;
+}
+
+.firebase-form2 .movies .movie button{
+        padding: 10px 15px;
+        border-radius: 30px;
+        background-color: #141414;
+        border: none;
+        color: #e5e5e5;
+        cursor: pointer;
+        transition: color 0.2s linear;
+        box-shadow: 0 0 5px red;
+}

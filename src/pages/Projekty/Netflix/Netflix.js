@@ -49,7 +49,6 @@ const Netflix = () => {
 
   return (
     <section className="netflix">
-
     <div className="vyhledavac">
         <form>
         <input type="text" autoComplete="off" placeholder="Vyhledač filmů..." value={vyhledavac} onChange={(e)=> setVyhledavac(e.target.value)} />

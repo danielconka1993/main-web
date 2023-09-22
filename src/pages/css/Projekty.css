@@ -23,6 +23,7 @@
 .projekty .container-jazyk .projekty-react{
     width: 100%;
     display: flex;
+    position: relative;
 }
         .projektyReact-radek{
             flex-direction: row;
