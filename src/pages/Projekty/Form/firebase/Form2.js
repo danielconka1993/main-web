@@ -87,7 +87,7 @@ const submitForm = async (e) => {
       <input type="text" placeholder="Název filmu" value={movieTitle} onChange={ (e) => {setMovieTitle(e.target.value)}} />
       <input type="number" placeholder="Minimální věk" value={movieAge} onChange={(e) => {setMovieAge(e.target.value)}} />
       <input type="number" placeholder="Čas filmu - min" value={movieTime} onChange={(e) => {setMovieTime(e.target.value)}} />
-      <input type="submit" value="Nahrát film" onClick={submitForm}/>
+      <input type="submit" value="Přidat film" onClick={submitForm}/>
     </form>
 
     {/* Vypsání*/}

@@ -73,3 +73,10 @@
         transition: color 0.2s linear;
         box-shadow: 0 0 5px red;
 }
+
+@media(max-width: 700px){
+    .firebase-form2 .movies .movie p{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
