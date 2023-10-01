@@ -114,9 +114,10 @@ const Domu = () => {
  const btnTypeScript = () => {
   setText(<article className="domu-ostatniJazyky">
       <h1>TypeScript</h1>
-      <h3>&nbsp; Současné studium</h3>
-      <p>&nbsp;Nyní se zabívám výukou TypeScriptu.</p>
-      <p>&nbsp;Další v pořadí jsou kurzích ohledně <span className="zluta">UI</span>.</p>
+        <h3>&nbsp;Při práci s ním ovládám </h3>
+        <p>
+              &nbsp;<span className="zluta">Datové typy</span> - Literal type, custom type, enum,  void, never, unknown, Function, tuple, any, object + základní typy.
+        </p>
     </article>
   )
  }
