@@ -1,9 +1,11 @@
 import { useState } from "react"
 import "./css/Projekty.css"
-import staryWeb from "./Projekty/staryweb.png"
 import Netflix from "./Projekty/Netflix/Netflix"
 import NoFirebase1 from "./Projekty/Form/noFirebase1/Form1"
 import Firebase1 from "./Projekty/Form/firebase/Form2"
+
+import realityImg from "./Projekty/Reality/reality.png"
+import staryWeb from "./Projekty/staryweb.png"
 
 
 
@@ -51,6 +53,18 @@ const Projekty = () => {
               </div>
             </div>
           </article>
+
+          <article className="container-jazyk">
+            <h1>Odkazy na další projekty</h1>
+
+            <div className='jeden-projekt odkazoveProjekty'>
+            <a href="https://reality-arevyhs.netlify.app/chci-nabidku" target="_blank" rel="noopener noreferrer"><img src={realityImg} alt="" />
+                <h3>Reality</h3></a>
+              <strong>Web pro zažadání o ocenení reality pro makléře.</strong>
+            </div>
+          </article>
+
+
 
           <article className="container-jazyk">
             <h1>JS | PHP | SQL</h1>
