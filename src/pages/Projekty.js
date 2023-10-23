@@ -55,11 +55,11 @@ const Projekty = () => {
           </article>
 
           <article className="container-jazyk">
-            <h1>Odkazy na další projekty</h1>
+            <h1>Odkazy projektů</h1>
 
             <div className='jeden-projekt odkazoveProjekty'>
-            <a href="https://reality-arevyhs.netlify.app/chci-nabidku" target="_blank" rel="noopener noreferrer"><img src={realityImg} alt="" />
-                <h3>Reality</h3></a>
+              <a href="https://reality-arevyhs.netlify.app/chci-nabidku" target="_blank" rel="noopener noreferrer"><img src={realityImg} alt="" />
+              <h3>Reality</h3></a>
               <strong>Web pro zažadání o ocenení reality pro makléře.</strong>
             </div>
           </article>
@@ -68,6 +68,7 @@ const Projekty = () => {
 
           <article className="container-jazyk">
             <h1>JS | PHP | SQL</h1>
+
             <div className='jeden-projekt staryweb'>
               <a href="https://arevyhs.000webhostapp.com" target="_blank" rel="noopener noreferrer">
               <img src={staryWeb} alt="obrazek projektu" />

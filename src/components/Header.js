@@ -35,7 +35,6 @@ const Header = () => {
               <div className={`nav-list ${showMenu ? "show" : "hide"}`}>
                     <NavLink onClick={skrytimenu} to="/"><HiHome /> Domu</NavLink>
                     <NavLink onClick={skrytimenu} to="/projekty"><HiOutlineCode /> Projekty</NavLink>
-                    {/* <NavLink to="/kontakty"><HiOutlineDeviceTablet /> Kontakty</NavLink> */}
               </div>
             </div>
             </nav>
