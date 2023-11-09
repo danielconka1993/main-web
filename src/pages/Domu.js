@@ -34,7 +34,7 @@ const Domu = () => {
   useEffect(() => {
     const zakladniText = setInterval(() => {
       setText(hlavniText());
-    }, 15000);
+    }, 20000);
     return () => clearInterval(zakladniText)
   }, [text]);
 
