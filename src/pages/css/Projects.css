@@ -1,100 +1,120 @@
-.Projects{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: calc(100vh - 100px);
+.Projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 100px);
 }
-.Projects .allProjects{
-    width: 100%;
+.Projects .allProjects {
+  width: 100%;
 }
-.Projects .allProjects .language{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-
+.Projects .allProjects .language {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
-.Projects .allProjects .language .tittle-box{
-    width: 100%;
-    margin: 15px 0;
+.Projects .allProjects .language .tittle-box {
+  width: 100%;
+  margin: 15px 0;
 }
-.Projects .allProjects .language h1{
-    text-align: right;
-    font-size: 35px;
-    padding: 5px 15px 5px 15px;
-    background-color: rgb(255, 247, 9);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    text-shadow: 0 0 35px rgb(46, 46, 46);
-    color: #141414;
-    width: 45%;
-    min-width: 320px;
+.Projects .allProjects .language h1 {
+  text-align: right;
+  font-size: 35px;
+  padding: 5px 15px 5px 15px;
+  background-color: rgb(255, 247, 9);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-shadow: 0 0 35px rgb(46, 46, 46);
+  color: #141414;
+  width: 45%;
+  min-width: 320px;
 }
-.Projects .allProjects .language .projects-box{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
- 
+.Projects .allProjects .language .projects-box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
-.Projects .allProjects .language .projects-box .oneProject{
-    flex: 1;
-    margin: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #141414;
-    border-radius: 30px;
-    transition: all linear 0.3s;
-    max-width: 60%;
+.Projects .allProjects .language .projects-box .oneProject {
+  flex: 1;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #141414;
+  border-radius: 30px;
+  transition: all linear 0.3s;
+  max-width: 60%;
 }
-.Projects .allProjects .language .projects-box .oneProject:hover{
-    box-shadow: 0 0 20px rgb(255, 247, 9);
-    transform: scale(1.01);
+.Projects .allProjects .language .projects-box .oneProject:hover {
+  box-shadow: 0 0 20px rgb(255, 247, 9);
+  transform: scale(1.01);
 }
 
 /* OneProject - 1 Component  */
-.Projects .allProjects .language .projects-box .oneProject .oneProject-oneProject{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    margin-bottom: 10px;
+.Projects
+  .allProjects
+  .language
+  .projects-box
+  .oneProject
+  .oneProject-oneProject {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 10px;
 }
-.Projects .allProjects .language .projects-box .oneProject .oneProject-oneProject img{
-    width: 100%;
-    border-top-left-radius: 23px; 
-    border-top-right-radius: 23px;
-    margin-bottom: 10px;
-    max-height: 66%;
+.Projects
+  .allProjects
+  .language
+  .projects-box
+  .oneProject
+  .oneProject-oneProject
+  img {
+  width: 100%;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  margin-bottom: 10px;
+  max-height: 66%;
 }
-.Projects .allProjects .language .projects-box .oneProject .oneProject-oneProject h3{
-    cursor: pointer;
+.Projects
+  .allProjects
+  .language
+  .projects-box
+  .oneProject
+  .oneProject-oneProject
+  h3 {
+  cursor: pointer;
 }
-.Projects .allProjects .language .projects-box .oneProject .oneProject-oneProject .text-box p{
-    margin: 10px;
+.Projects
+  .allProjects
+  .language
+  .projects-box
+  .oneProject
+  .oneProject-oneProject
+  .text-box
+  p {
+  margin: 10px;
 }
-.Projects .allProjects .language .netf{
-    margin-top: 20px;
-    width: 100%;
+.Projects .allProjects .language .netf {
+  margin-top: 20px;
+  width: 100%;
 }
 
-@media(max-width: 800px){
-    .Projects .allProjects .language h1{
-        text-align: left;
-        width: 95%;
-    }
-    .Projects .allProjects .language .projects-box{
-        flex-direction: column;
-        align-items: center;
-    }
-    .Projects .allProjects .language .projects-box .oneProject{
-        margin-top: 10px;
-    }
-    .Projects .allProjects .language .netf .oneProject{
-        width: 80%;
-    }
-
+@media (max-width: 800px) {
+  .Projects .allProjects .language h1 {
+    text-align: left;
+    width: 95%;
+  }
+  .Projects .allProjects .language .projects-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Projects .allProjects .language .projects-box .oneProject {
+    margin-top: 10px;
+    max-width: none;
+    width: 90%;
+  }
 }
