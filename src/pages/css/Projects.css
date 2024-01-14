@@ -84,7 +84,7 @@
 @media(max-width: 800px){
     .Projects .allProjects .language h1{
         text-align: left;
-        width: 90%;
+        width: 95%;
     }
     .Projects .allProjects .language .projects-box{
         flex-direction: column;
