@@ -8,17 +8,6 @@ const Projects = () => {
   return (
     <section className="Projects">
       <section className="allProjects">
-        <article className="language">
-          <div className="tittle-box">
-            <h1>React - FrontEnd</h1>
-          </div>
-
-          <div className="projects-box netf">
-            <div className="oneProject">
-              <NetflixBox />
-            </div>
-          </div>
-        </article>
 
         <article className="language">
           <div className="tittle-box">
@@ -30,6 +19,18 @@ const Projects = () => {
             </div>
             <div className="oneProject">
               <NoticeBoard />
+            </div>
+          </div>
+        </article>
+
+        <article className="language">
+          <div className="tittle-box">
+            <h1>React - FrontEnd</h1>
+          </div>
+
+          <div className="projects-box netf">
+            <div className="oneProject">
+              <NetflixBox />
             </div>
           </div>
         </article>
