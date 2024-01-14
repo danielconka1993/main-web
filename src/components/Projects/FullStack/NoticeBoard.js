@@ -11,7 +11,7 @@ const NoticeBoard = () => {
       >
         <img src={realityImg} alt="" />
         <h3>
-          <span className="span-underLine"> Reality</span>
+          <span className="span-underLine"> Nástěnka</span>
         </h3>
       </a>
       <div className="text-box">
