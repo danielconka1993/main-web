@@ -1,1 +1,1 @@
-# Porfolio Daniel Čonka
+# Moje Porfolio Daniel Čonka

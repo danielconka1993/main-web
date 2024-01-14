@@ -49,6 +49,7 @@
     border: 5px solid #141414;
     border-radius: 30px;
     transition: all linear 0.3s;
+    max-width: 60%;
 }
 .Projects .allProjects .language .projects-box .oneProject:hover{
     box-shadow: 0 0 20px rgb(255, 247, 9);

@@ -16,7 +16,7 @@ const Reality = () => {
         <p> Web pro zažadání o ocenení reality pro makléře.</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-        <p><span className="span-yellowText">ReatJS + FireBase</span></p>
+        <p><span className="span-yellowText">ReatJS - FireBase</span></p>
       </div>
     </div>
   );

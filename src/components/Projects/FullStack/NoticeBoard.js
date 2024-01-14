@@ -18,7 +18,7 @@ const NoticeBoard = () => {
         </p>
         <p>&nbsp;</p>
         <p>Login, Registrace (Hash) + JWT</p>
-        <p><span className="span-yellowText">ReactJS + Express + MongoDB</span></p>
+        <p><span className="span-yellowText">ReactJS - Express.js - MongoDB</span></p>
       </div>
       
     </div>
