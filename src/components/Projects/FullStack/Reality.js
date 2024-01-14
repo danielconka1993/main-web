@@ -10,13 +10,17 @@ const Reality = () => {
         rel="noopener noreferrer"
       >
         <img src={realityImg} alt="" />
-        <h3><span className="span-underLine">Reality</span>  </h3>
+        <h3>
+          <span className="span-underLine">Reality</span>{" "}
+        </h3>
       </a>
       <div className="text-box">
         <p> Web pro zažadání o ocenení reality pro makléře.</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-        <p><span className="span-yellowText">ReatJS - FireBase</span></p>
+        <p>
+          <span className="span-yellowText">ReatJS - FireBase</span>
+        </p>
       </div>
     </div>
   );

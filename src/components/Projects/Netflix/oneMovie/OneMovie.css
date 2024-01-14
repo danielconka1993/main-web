@@ -1,62 +1,56 @@
 .oneMovie-solo {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    color: #e5e5e5;
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  color: #e5e5e5;
 }
-.oneMovie-solo .odkaz{
-    padding-top: 40px;
-    margin-bottom: 15px;
+.oneMovie-solo .odkaz {
+  padding-top: 40px;
+  margin-bottom: 15px;
 }
-    .oneMovie-solo .odkaz a{
-        text-decoration: none;
-        width: 300px;
-        font-size: 30px;
-        text-align: center;
-        color: #e5e5e5;
-        padding: 12px 15px 10px 15px;
-        border-radius: 10px;
-        background-color: black;
-        color: #e5e5e5;
-        border: 5px solid #141414;
-        box-shadow: 0 0 5px rgb(255, 247, 9);
-        transition: box-shadow 0.2s linear;
-    }
-        .oneMovie-solo a:hover{
-            box-shadow: 0 0 20px rgb(255, 247, 9);
-        }
-
-.oneMovie-solo .oneMovie-info{
-    border: 5px solid #141414;
-    width: 41%;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border-radius: 30px;
-    margin: 20px;
+.oneMovie-solo .odkaz a {
+  text-decoration: none;
+  width: 300px;
+  font-size: 30px;
+  text-align: center;
+  color: #e5e5e5;
+  padding: 12px 15px 10px 15px;
+  border-radius: 10px;
+  background-color: black;
+  color: #e5e5e5;
+  border: 5px solid #141414;
+  box-shadow: 0 0 5px rgb(255, 247, 9);
+  transition: box-shadow 0.2s linear;
 }
-.oneMovie-solo .oneMovie-info h1{
-    width: 100%;
-    text-align: center;
-    color: rgb(255, 247, 9);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding: 10px;
-}
-.oneMovie-solo .oneMovie-info img{
-    width: 98%;
-    border-radius: 30px;
-
-}
-.oneMovie-solo .oneMovie-info p{
-    padding: 10px 20px;
+.oneMovie-solo a:hover {
+  box-shadow: 0 0 20px rgb(255, 247, 9);
 }
 
-@media(max-width:1300px){
-
+.oneMovie-solo .oneMovie-info {
+  border: 5px solid #141414;
+  width: 41%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 30px;
+  margin: 20px;
+}
+.oneMovie-solo .oneMovie-info h1 {
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 247, 9);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 10px;
+}
+.oneMovie-solo .oneMovie-info img {
+  width: 98%;
+  border-radius: 30px;
+}
+.oneMovie-solo .oneMovie-info p {
+  padding: 10px 20px;
 }

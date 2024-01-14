@@ -1,48 +1,48 @@
-.LeftMenuIcons{
-    position: absolute;
-    top: 25px;
-    left: 33px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.LeftMenuIcons {
+  position: absolute;
+  top: 25px;
+  left: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* Ľeft - Iconsts--------- */
 .leftMenuIcons-box {
-    margin-bottom: 5px;
-  }
-  .leftMenuIcons-box a{
-    display: flex;
-    align-items: center;
-  }
-  
-  .leftMenuIcons-box p {
-    white-space: nowrap;
-    opacity: 0; 
-    transform: translateX(-100%);
-    transition: all 0.5s ease;
-    padding: 5px 15px;
-    border-radius: 30px;
-    cursor: pointer;
-  }
-  
-  .leftMenuIcons-box .icon {
-    width: 40px;
-    height: auto;
-    padding: 5px;
-    margin-right: 5px;
-    font-size: 30px;
-    border: 2px solid #fff709;
-    border-radius: 50%;
-    transition: all 0.3s linear;
-  }
-  
-  .leftMenuIcons-box:hover p {
-    opacity: 1;
-    transform: translateX(0);
-    background-color: #fff70931;
-  }
-  .leftMenuIcons-box:hover .icon{
-    border-color: aliceblue;
-    color: #fff709;
-  }
+  margin-bottom: 5px;
+}
+.leftMenuIcons-box a {
+  display: flex;
+  align-items: center;
+}
+
+.leftMenuIcons-box p {
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  padding: 5px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.leftMenuIcons-box .icon {
+  width: 40px;
+  height: auto;
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 30px;
+  border: 2px solid #fff709;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+
+.leftMenuIcons-box:hover p {
+  opacity: 1;
+  transform: translateX(0);
+  background-color: #fff70931;
+}
+.leftMenuIcons-box:hover .icon {
+  border-color: aliceblue;
+  color: #fff709;
+}

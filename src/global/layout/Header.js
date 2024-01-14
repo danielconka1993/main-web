@@ -17,13 +17,13 @@ const Header = () => {
       <nav>
         <div className="navigation">
           <div className="nav-header">
-          <NavLink to="/">
-            <div className="header-name">
-              <img src={ReactLogo} alt="" />
-              <p>Developer</p>
-              <p>Full-stack</p>
-            </div>
-          </NavLink>
+            <NavLink to="/">
+              <div className="header-name">
+                <img src={ReactLogo} alt="" />
+                <p>Developer</p>
+                <p>Full-stack</p>
+              </div>
+            </NavLink>
 
             <button onClick={() => setShowMenu(!showMenu)}>
               <HiMenu className="hamburger-icon" />
