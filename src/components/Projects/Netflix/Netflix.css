@@ -1,0 +1,129 @@
+.Netflix{
+    color: red;
+    text-align: center;
+    text-shadow: 0 0 20px black;
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+    border-top: 5px solid #141414;
+}
+.Netflix .searchEngine form input{
+    margin: 20px 0;
+    width: 40%;
+    padding: 6px 15px 5px 15px;
+    outline: none;
+    border: 5px solid #141414;
+    background-color: black;
+    border-radius: 20px;
+    color: #e5e5e5;
+    font-size: 20px;
+    transition: all 0.3s linear;
+}
+.Netflix .searchEngine form input:hover{
+    padding-left: 25px;
+}
+.Netflix .searchEngine form input:focus{
+    box-shadow: 0 0 5px red;
+}
+
+.Netflix .caterogies-btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #141414;
+}
+.Netflix button{
+    margin: 5px;
+    padding: 7px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: #141414;
+    border: none;
+    background: black;
+    color: #e5e5e5;
+    transition: color 0.2s linear;
+    box-shadow: 0 0 5px red;
+    min-width: 100px;
+}
+.Netflix button:hover{
+    color: red;
+}
+
+.Netflix .allMovies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Netflix .oneMovie{
+    position: relative;
+    width: 300px;
+    height: 440px;
+    margin: 10px 10px;
+    background-color: black;
+    color: rgb(244, 242, 242);
+    box-shadow: 0 0 20px black;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.Netflix .oneMovie:hover{
+    transform: scale(1.02);
+}
+.Netflix .oneMovie h2,
+.Netflix .oneMovie p{
+    padding: 0 10px;
+    color: #e5e5e5;
+}
+.Netflix .oneMovie img{
+    height: 160px;
+}
+.Netflix .oneMovie p{
+    font-size: 16px;
+    margin-top: 5px;
+}
+.Netflix .oneMovie .tags{
+    color: red;
+}
+.Netflix .posledniP{
+    margin-bottom: 10px;
+}
+.Netflix .oneMovie button{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -5;
+    left: -5;
+    background-color: #141414;
+}
+    
+    .Netflix .BtnAll{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+    border-top: 5px solid #141414;
+    
+}
+.Netflix .BtnAll button{
+    width: 200px;
+    margin: 30 10 0 10;
+}
+    .Netflix .questions{
+    position: relative;
+    border-top: 5px solid #141414;
+    width: 100%;
+    padding: 0 10;
+}
+.Netflix .questions button{
+    width: 200px;
+    margin: 30 10 20 10;
+}
+
+@media(max-width:700px){
+    .Netflix .searchEngine form input{
+        width: 95%;
+    }
+}

@@ -1,0 +1,19 @@
+.MainText {
+  /* width: 100%; */
+}
+.MainText h1:nth-child(1) {
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.MainText h1:nth-child(2) {
+  font-size: 60px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 5px;
+}
+.MainText p {
+  font-size: 20px;
+  line-height: 2; /* Zvýší řádkování, což vytvoří větší mezery mezi řádky */
+  letter-spacing: 0.05em; /* Zvětší mezery mezi písmeny o 0.1 em jednotky */
+  font-weight: normal;
+  margin-left: 5px;
+}

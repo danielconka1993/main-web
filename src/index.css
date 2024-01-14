@@ -3,23 +3,59 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(46, 46, 46);
-    width: 100%;
-
-
+body {
+  width: 100%;
+  min-height: 100vh;
+  color: aliceblue;
 }
-.body{
-    margin: 0px auto;
-    background-color: rgb(15, 15, 15);
-    color: aliceblue;
+header{
     width: 100%;
-    max-width: 1920px; /* Pokud chcete zachovat maximální šířku */
+    background-color: #141414;
 }
-header, footer{
-    width: 100%;
-}
-
 main{
-    min-height: calc(100vh - 110px);
+  min-height: calc(100vh - 100px);
+  background-color: rgb(15, 15, 15);
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: #141414;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* --------------- */
+p, h1, h2, h3,strong{
+  cursor: default;
+}
+  a{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+  }
+  button{
+    color:aliceblue;
+    cursor: pointer;
+  }
+  
+
+
+  /* Home ---------------------------- */
+  .Left{
+    min-width: 350px;
+    width: 40%;
+  }
+  .Right{
+    width: 60%;
+  }
+
+  /* Others */
+.span-underLine{
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(255, 247, 9) ;
+  padding: 0 10px 5px 10px;
+}
+.span-yellowText{
+  color: rgb(255, 247, 9);
 }
