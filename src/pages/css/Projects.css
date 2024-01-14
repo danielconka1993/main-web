@@ -78,12 +78,22 @@
 }
 .Projects .allProjects .language .netf{
     margin-top: 20px;
+    width: 100%;
 }
+
 @media(max-width: 800px){
+    .Projects .allProjects .language h1{
+        text-align: left;
+    }
     .Projects .allProjects .language .projects-box{
         flex-direction: column;
+        align-items: center;
     }
     .Projects .allProjects .language .projects-box .oneProject{
         margin-top: 10px;
     }
+    .Projects .allProjects .language .netf .oneProject{
+        width: 80%;
+    }
+
 }
