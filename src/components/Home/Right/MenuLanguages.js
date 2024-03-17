@@ -17,10 +17,10 @@ const MenuLanguages = () => {
   return (
     <div className="MenuLanguages">
       <div className="menu-Languages">
-        {dataLanguages.map((oneDataLanguages) => {
-          const { id, buttonValue, jsxValue } = oneDataLanguages;
+        {dataLanguages.map((oneDataLanguages, index) => {
+          const { buttonValue, jsxValue } = oneDataLanguages;
           return (
-            <button key={id} onClick={() => setData(jsxValue)}>
+            <button key={index} onClick={() => setData(jsxValue)}>
               {buttonValue}
             </button>
           );

@@ -1,5 +1,5 @@
 import React from "react";
-import realityImg from "../../../img/Projects/noticeBoard.png";
+import realityImg from "../../../img/Projects/Mini/miniNoticeBoard.png";
 
 const NoticeBoard = () => {
   return (

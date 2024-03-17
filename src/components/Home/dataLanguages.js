@@ -3,14 +3,13 @@ import "./Right/css/AllLanguages.css";
 
 const dataLanguages = [
   {
-    id: 1,
     buttonValue: "ReactJS",
     jsxValue: (
       <article className="oneLanguageDetail">
         <h1>ReactJS</h1>
         <h2>Při práci s ním ovládám </h2>
         <p>
-          <span className="span-yellowText">Globál</span> Context + Reducer, props. Ukládáná dat z BE do  <span className="span-underLine">LocalStorage</span>.
+          <span className="span-yellowText">Globál</span> Context + Reducer, props. Práce s  <span className="span-underLine">LocalStorage</span>.
         </p>
         <p>
           <span className="span-yellowText">Hooks</span> všeho druhu. Tvorba <span className="span-yellowText">Redexů</span>. Zpracování <span className="span-yellowText">REST API</span>.
@@ -22,26 +21,48 @@ const dataLanguages = [
     ),
   },
   {
-    id: 2,
     buttonValue: "Node.js",
     jsxValue: (
       <article className="oneLanguageDetail">
         <h1>Node.js - Express</h1>
         <h2>Při práci s ním ovládám </h2>
         <p>
-          <span className="span-yellowText">Routy</span> - GET, PUT, DELETE, POST, Create. Upřednosťuji <span className="span-yellowText">try-catch konstrukci</span>.
+          <span className="span-yellowText">Routy</span> - GET, PUT, DELETE, POST, Create. Upřednosťnuji <span className="span-yellowText">try-catch konstrukci</span>.
         </p>
         <p>
           <span className="span-underLine">Bezpečnost</span> - <span className="span-yellowText">JWT</span> token, <span className="span-yellowText">HASH</span> hesel.
         </p>
         <p>
-          Efektivní manipulace v routě s větším počtem kolekcí v <span className="span-yellowText">MongoDB</span> pro minimalizaci počtu endpointů .
+          Efektivní manipulace v routě s větším počtem kolekcí v <span className="span-yellowText">MongoDB</span> pro minimalizaci počtu endpointů.
         </p>
       </article>
     ),
   },
   {
-    id: 3,
+    buttonValue: "SCSS",
+    jsxValue: (
+      <article className="oneLanguageDetail">
+        <h1>
+          SCSS <span className="span-yellowText">&</span> SASS
+        </h1>
+        <h2>CSS na steroidech</h2>
+        <p>
+        <span className="span-yellowText">Promenné</span> - centralizování hodnot pro efektivní aktualizaci vzhledu.
+        </p>
+        <p>
+        <span className="span-yellowText">Mixiny</span> - znovu použitelné includy balíčku vzhledu.
+        </p>
+        <p>
+        <span className="span-yellowText">Funkce</span> - efektivní a organizovaný kód při stylování webových stránek.
+        </p>
+        <p>
+          <span className="span-yellowText">GUI</span> - používání grafického
+          prostředí <span className="span-underLine">Git Kraken</span>.
+        </p>
+      </article>
+    ),
+  },
+  {
     buttonValue: "Git",
     jsxValue: (
       <article className="oneLanguageDetail">
@@ -70,7 +91,6 @@ const dataLanguages = [
     ),
   },
   {
-    id: 4,
     buttonValue: "JavaScript",
     jsxValue: (
       <article className="oneLanguageDetail">
@@ -89,7 +109,6 @@ const dataLanguages = [
     ),
   },
   {
-    id: 5,
     buttonValue: "PHP & SQL",
     jsxValue: (
       <article className="oneLanguageDetail">
@@ -113,7 +132,6 @@ const dataLanguages = [
     ),
   },
   {
-    id: 6,
     buttonValue: "TypeScript",
     jsxValue: (
       <article className="oneLanguageDetail">
